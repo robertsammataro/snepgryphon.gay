@@ -5,14 +5,8 @@ body {
   align-items: center;
   align-content: center;
   text-align: center;
-  background-image: linear-gradient(
-    to right top,
-    #b50ec6,
-    #b00acf,
-    #a909d8,
-    #a00ce1,
-    #9612eb
-  );
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   background-attachment: fixed;
 }
 
@@ -101,11 +95,15 @@ body {
 }
 
 .pfp {
-  width: min(20%, 200px)
+  width: min(20%, 200px);
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px #000000;
 }
 
 @media only screen and (max-width: 850px) {
   .pfp{
     width: 40%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px #000000;
   }
 }
